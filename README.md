@@ -18,6 +18,7 @@ Abaixo detalho como fiz, e a maneira "mais fácil" que poderia ser utilizada em 
 - Controle de status (enable) dos edits: Se utilizado TDBGrid poderia ser colocado para que o status dos edits fossem determinados conforme o State do FDQuery, geralmente utilizado no DataChange e StateChange do TDataSource
 - Gravação de dados: Em caso de utilizar TFDQuery e TDBEdit bastaria dar um .post e .applyupdates e os dados seriam inseridos ou atualizados para o banco. Todo o controle é feito pelo Firedac, mesmo o de saber se precisar incluir novo ou editar um existente.
 - Excluir/Cancelar pedido: Em caso de utilizar TFDQuery e TDBEdit utilizar .delete já seria o suficiente
+- Utilizar delete em ambas as telas: Poderia ser definido na tabela de pedidos para utilizar Delete CASCADE mas optei por não usar para trabalhar com transação na exclusão das duas em sequencia.
 
 #### Note ainda que existe rotina para muita coisa, assim, tentei pensar em reaproveitar ao máximo os códigos e deixar mais genérico possível para ser fácil de realizar alterações futuras
 
